@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+  	position: relative;
+  	background: rgb(227, 232, 230);
+  	font-family: Helvetica;
+  	color: rgb(128,128,128);
+}
+
+html, body {
+    height: 100%;
+    width: 100vw;
+}
+
+header{
+	/* Включаем режим Flexbox. */
+	display: flex; 
+	
+	/* Распределяем элементы внутри шапки */
+	justify-content: space-between;
+
+	/* Выравниваем элементы вертикально по центру. */
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: rgb(255, 255, 255);
+	top: 0px;
+	left: 0px;
+	box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+	z-index: 9999;
+}
+
+footer{
+	margin-bottom: 0px;
+	/* Включаем режим Flexbox. */
+	display: flex; 
+	/* Распределяем элементы внутри шапки */
+	justify-content: space-between;
+
+	/* Выравниваем элементы вертикально по центру. */
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	color: rgb(71, 0, 119);
+}
+
+.copyright a {
+	color: rgb(150, 150, 150);
+	text-decoration: none;
+	font-weight: 600;
+}
+.content {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 15px;
+	min-height: 80%;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+table{
+	margin: 0 auto;
+	width: 90%;
+	border-top: solid 1px rgb(128,128,128);
+}
+
+td {
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: solid 1px rgb(128,128,128);
+}
+
+tr:hover{
+	background: rgb(252, 252, 252);
+	-webkit-transition: 0.3s ease;
+  	-moz-transition: 0.3s ease;
+  	-o-transition: 0.3s ease;
+  	transition: 0.3s ease;
+}
+
+.block {
+	border-radius: 5px;
+	background: rgb(255, 255, 255);
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 100%;
+	max-width: 500px;
+	padding: 10px;
+	box-shadow: 0 0 5px;
+	box-sizing: border-box;
+	padding-bottom: 50px;
+}
+
+input{
+	/*for WebKit*/
+ 	-webkit-appearance: none;
+ 	/* for FF */
+  	-moz-appearance: none;
+  	text-indent: 0.01px; 
+  	text-overflow: '';
+  	/* for IE */
+  	-ms-appearance: none;
+  	appearance: none;
+}
+
+input[type=submit] {
+	border: solid 1px rgb(71, 0, 119);
+	background: rgb(255, 255, 255);
+	color: rgb(71, 0, 119);
+	border-radius: 0px;
+	width: 70px;
+	height: 20px;
+	text-align: center;
+	padding: 0px;
+	padding-bottom: 2px;
+}
+
+input[type=submit]:hover {
+	background: rgb(71, 0, 119);
+	color: rgb(255, 255, 255);
+	-webkit-transition: 0.3s ease;
+  	-moz-transition: 0.3s ease;
+  	-o-transition: 0.3s ease;
+  	transition: 0.3s ease;
+}
+
+select {
+	border: solid 1px rgb(0,0,0);
+	border-radius: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.copyright{
+	color: rgb(150, 150, 150);
+	font-weight: 100;
+}
+
+.property_name{
+	text-align: right;
+	width: 50%;
+	color: rgb(71, 0, 119);
+}
+
+.property_value{
+	text-align: left;
+	width: 50%;
+}
+
+a {
+	color: rgb(71, 0, 119);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 500px){
+	.block {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+	}
+}
